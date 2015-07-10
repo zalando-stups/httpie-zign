@@ -8,7 +8,7 @@ setup(
     version='0.1',
     author='Henning Jacobs',
     author_email='henning.jacobs@zalando.de',
-    license='Apache 2.0',
+    license='Apache License 2.0',
     url='https://github.com/zalando-stups/httpie-zign',
     py_modules=['httpie_zign'],
     zip_safe=False,
@@ -25,7 +25,9 @@ setup(
         'Development Status :: 5 - Production/Stable',
         'Programming Language :: Python',
         'Environment :: Plugins',
+        'License :: OSI Approved :: Apache Software License',
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Utilities'
     ],
+    keywords='httpie oauth oauth2 stups zign access token',
 )
