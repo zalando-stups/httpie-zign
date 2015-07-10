@@ -21,4 +21,5 @@ Usage
 
 .. code-block:: bash
 
-    $ http --auth-type=zign --auth='token-name:' example.org
+    $ http --auth-type=zign --auth='token-name:' https://example.org
+    $ http --auth-type=zign -a mytok: https://example.org
