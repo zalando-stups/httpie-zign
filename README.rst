@@ -22,14 +22,20 @@ Usage
 -----
 
 This plugin takes the Zign token name as the ``--auth`` username.
-The ``--auth`` password is completely ignored.
-You have to generate the named Zign OAuth 2 token before using HTTPie:
+The ``--auth`` password is used to specify to OAuth scopes.
+A named Zign OAuth 2 token is created and used with the specified scopes:
 
 .. code-block:: bash
 
-    $ zign token -n mytok # generate named OAuth token "mytok"
-    $ http --auth-type=zign --auth=mytok: https://example.org
-    $ http --auth-type=zign -a mytok: https://example.org
+    $ http --auth-type=zign --auth=mytok:myscope https://example.org
+    $ http --auth-type=zign -a mytok:myscope1,scope2 https://example.org
+    $ http --auth-type=zign -a mytok: https://example.org  # use default scopes
+
+You can list the created tokens using the Zign CLI:
+
+.. code-block:: bash
+
+    $ zign li
 
 You can set the default ``--auth-type=zign`` option in the ``~/.httpie/config.json`` file for convenience:
 

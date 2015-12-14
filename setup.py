@@ -5,7 +5,7 @@ setup(
     name='httpie-zign',
     description='Zign OAuth 2 plugin for HTTPie.',
     long_description=open('README.rst').read().strip(),
-    version='0.1',
+    version='0.2',
     author='Henning Jacobs',
     author_email='henning.jacobs@zalando.de',
     license='Apache License 2.0',
@@ -19,7 +19,7 @@ setup(
     },
     install_requires=[
         'httpie>=0.7.0',
-        'stups-zign'
+        'stups-zign>=1.0.17'
     ],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
